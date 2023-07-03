@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <scrip src="./js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <title>ととのいべあ</title>
+</head>
+<body>
+ <!-- ヘッダー -->
+ <header class="header">
+    <nav class="header_nav">
+        <p class="header_logo">
+            <!-- Web更新 -->
+            <a href="main_page.html" class="transform">
+                <img src="./image/kuma_spa_logo_s.png">
+            </a>
+        </p>
+        <ul class="header_nav_list">
+            <li class="header_nav_item">
+                <!-- About に飛ぶ -->
+                <a href="#about" class="header_about">
+                    ABOUT
+                </a>
+            </li>
+            <li class="header_nav_item">
+            </li>           
+            <li class="header_nav_item">
+                <!-- STORE に飛ぶ -->
+                <a href="./shop.html" class="header_store">
+                    STORE
+                </a> 
+             </li>  
+             <li class="header_nav_item">
+                <!-- CHALENGE に飛ぶ -->
+                <a href="./game.html" class="header_chalenge">
+                    CHALLENGE
+                </a>
+             </li>                  
+             <li class="header_nav_item">
+                <!-- CONTACT に飛ぶ -->
+                <a href="#contact" class="header_contact">
+                    CONTACT
+                </a>
+             </li>     
+        </ul>
+    </nav>
+    </div>
+ </header>
+<div class="index-sns_wrap">
+    <ul class="index-sns_list">
+        <li class="index-sns_item">
+            <a href="https://www.instagram.com/kuma_spa/">
+                <img src="./image/inst1.png" alt="">
+            </a>
+        </li>
+        <li class="index-sns_item">
+            <a href="https://twitter.com/kuma_spa/">
+                <img src="./image/twit1.png" alt="">
+            </a>
+        </li>        
+    </ul>
+</div>
+<section class="index-top">
+    <div class="index-top_image">
+    </div>
+</section>
+<section class="index-about" id="about">
+<div class="about">
+    <div class="index_text">
+        <p>
+            熊スパのナカマたち
+        </p>
+    </div>
+    <div class="about_box">
+        <div class="about_all">
+                <div class="ase">
+                    <a href="#ase">
+                        <button id="ase_b" class="button">
+                            あせかきおにぃさん
+                        </button>
+                    </a>
+                </div>
+                <div class="shiro">
+                    <div class="shiro_papa">
+                        <a href="#papa">
+                            <button id="papa_b"class="button">パパ</button>
+                        </a>
+                    </div>
+                    <div class="shiro_hana">
+                        <a href="#hana">
+                            <button id="hana_b"class="button">
+                                はなたれ
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="itsumo">
+                        <a href="#itsumo">
+                            <button id="itsumo_b"class="button">
+                                いつものおじさん
+                            </button>
+                        </a>
+                </div>
+        </div>
+        <div id="bears">
+            <div id="hana">
+                <div class="about_bears">
+                    <div class="about_image">
+                        <img src="./image/hanatare.jpg" alt="" class="about_bears_image2">
+                    </div>
+                    <div class="bears_text">
+                        <p class="name_bears">はなたれ</p>
+                        <p class="ex_bears">
+                            いつもハナミズをたらしているコグマ
+                            <br>
+                            パパにつれられこの熊スパによくおとずれる
+                            <br>
+                            シュミはイタズラ
+                            <br>
+                            かわいいかおしてイタズラはえげつない
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="papa">   
+                <div class="about_bears">
+                    <div class="about_image">
+                        <img src="./image/papa.jpg" alt="" class="about_bears_image2">
+                    </div>
+                    <div class="bears_text">
+                        <p class="name_bears">パパ</p>
+                        <p class="ex_bears">
+                            はなたれのパパ
+                            <br>
+                            サウナにはいることがいきがい
+                            <br>
+                            サウナのためならなんでもできる
+                            <br>
+                            さいきん熊スパをはっけんしかよいはじめた
+                        </p>
+                    </div>
+                </div>
+            </div> 
+            <div id="itsumo">    
+                <div class="about_bears" id="itsumo">
+                    <div class="about_image">
+                        <img src="./image/itsumono.jpg" alt="" class="about_bears_image2">
+                    </div>
+                    <div class="bears_text">
+                        <p class="name_bears">いつものおじさん</p>
+                        <p class="ex_bears">
+                            いつものおじさん熊スパにいるおじさん
+                            <br>
+                            コグマがだいきらい
+                            <br>
+                            まえにかよっていたせんとうはかぞくづれが
+                            <br>
+                            おおかったため、コグマのすくない
+                            <br>
+                            この熊スパにかようようになった
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="ase">
+                <div class="about_bears">
+                    <div class="about_image">
+                        <img src="./image/asekaki.jpg" alt="" class="about_bears_image2">
+                    </div>
+                    <div class="bears_text">
+                        <p class="name_bears">あせかきおにぃさん</p>
+                        <p class="ex_bears">
+                            きんじょのダイガクセイ
+                            <br>
+                            サウナはにがてだがサウナーだといえば
+                            <br>
+                            モテるとおもっている
+                            <br>
+                            まいにちいるがサウナにはいっているのは
+                            <br>
+                            たいざいじかんの10%
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section id="contact" class="contact">
+    <div class="index_text">
+        <p>
+            contact
+        </p>
+    </div>
+    <div class="contact_box">
+        <div class="name">
+            name: <input type="text" id="name">
+        </div>
+        <div class="email">
+            e-mail: <input type="email" id="e-mail">
+        </div>
+        <div class="text_box">
+            <textarea name="" id="text_box" cols="50" rows="10"></textarea>
+        </div>
+        <div class="send">
+            <button id="send">
+                おくる
+            </button>
+        </div>        
+    </div>
+</section>
+<footer>
+    ©️ chisakky
+</footer>
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--** 以下Firebase **-->
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved }
+        from "https://cdnjs.cloudflare.com/ajax/libs/firebase/9.6.0/firebase-database.min.js";
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA6nE71tO8iRRy0Qk-9TdTjQWnGsm11CWg",
+      authDomain: "fir-demo-34b55.firebaseapp.com",
+      projectId: "fir-demo-34b55",
+      storageBucket: "fir-demo-34b55.appspot.com",
+      messagingSenderId: "307817497848",
+      appId: "1:307817497848:web:e45105d934cd208f46670d"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // resltime DB に接続する
+    const db = getDatabase(app);
+    const dbRef = ref(db,"chat");
+
+    // 送信ボタンが押されたら、データをDBに送信
+    $("#send").on("click", function(){
+        // 保存のデータのオブジェクトを作る
+        const msg = {
+            uname: $("#name").val(),
+            email: $("#e-mail").val(),
+            text: $("#text_box").val()
+        };
+        console.log(msg)
+
+        // 新規のデータを送れる状態にセット
+        const newPostRef = push(dbRef);
+
+        // DBに値を送信
+        set(newPostRef, msg);
+    });
+</script>
+
+
+</body>
+</html>

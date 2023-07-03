@@ -1,0 +1,97 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    font-family: "Nico Moji";
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 0.5em;
+}
+
+main{
+    border-bottom:1px solid #ccc;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+.img{
+    width: 600px;
+    margin: 0 auto;
+}
+.img_a{
+    width:100%;
+    height: auto;
+}
+.img_box{
+    display: flex;
+    justify-content: center;
+}
+.st_btn{
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    font-size: 70px;
+    font-family: "Nico Moji";
+    text-decoration: underline;
+}
+.st_btn:hover{
+    color:#0066CC
+}
+
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+    cursor: pointer;
+    text-decoration: none;
+}
+p:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+.moji{
+    font-size: 70px;
+}
+.judge{
+    font-size: 80px;
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    align-self: center;
+}
+.transform{
+    margin-top: auto ;
+    margin-bottom: auto;
+    margin-right: auto;
+}
