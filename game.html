@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+<title>じゃんけん</title>
+</head>
+<body>
+
+<header>
+  <div class="header">
+    <a href="main_page.html" class="transform">
+        <img src="./image/kuma_spa_logo_s.png">
+    </a>
+    <h1 class="title">ジャンケン Challenge</h1>
+  </div>
+</header>
+
+<main>
+  <div class="img_box">
+    <button class="st_btn" id="st_btn" onclick="startTimer()">
+        スタート！！
+    </button>
+  </div>
+    <div class="img">
+        <img src="./image/janken.png" class="img_a" id="myImage" />
+    </div>
+  </div>
+  <div id="myElement" style="display: none;">
+    <ul>
+        <li id="gu_btn">グー</li>
+        <li id="cho_btn">チョキ</li>
+        <li id="par_btn">パー</li>
+    </ul>
+    <div>コンピュータのだしたては？「<span id="pc_hands">なに？</span>」</div>
+    <div id="judgment" class="judge"></div>
+    <div id="again">
+        <p id="moji" class="moji"></p>
+    </div>
+  </div>
+</main>
+
+<footer></footer>
+<script>
+// スタートを押す
+function startTimer(){
+    var image = document.getElementById('myImage');
+    var element = document.getElementById('myElement')
+// 画像の切替
+    image.src = "./image/saisho.png";
+// 要素の表示
+    element.style.display = "block";
+// 一定の時間経過後に画像を元に戻す 
+setTimeout(function(){
+    image.src = "./image/janken.png";
+},3000);
+}
+
+//じゃんけん用のSCRIPTを書いてください
+// コンピューターの手を定義する
+let comp = Math.ceil(Math.random()*3) 
+  console.log (comp)
+  // グーのとき
+$("#gu_btn").on("click",function(){
+  let input_gu = 1;
+  var image = document.getElementById('myImage')
+if (comp == 1){
+  $("#pc_hands").text("グー")
+  $("#judgment").text("あいこです")
+  image.src = "./image/gu.png"
+}else if (comp == 2 ){
+  $("#pc_hands").text("チョキ")
+  $("#judgment").text("カチです")
+  image.src = "./image/cho.png"
+}else if (comp == 3 ){
+  $("#pc_hands").text("パー")
+  $("#judgment").text("マケです")
+  image.src = "./image/pa.png"
+}
+  $("#moji").text("もういっかいやる？？")
+})
+  // チョキの時
+  $("#cho_btn").on("click",function(){
+  let input_cho = 2;
+  var image = document.getElementById('myImage')
+if (comp == 1){
+  $("#pc_hands").text("グー")
+  $("#judgment").text("マケです")
+  image.src = "./image/gu.png"
+}else if (comp == 2 ){
+  $("#pc_hands").text("チョキ")
+  $("#judgment").text("あいこです")
+  image.src = "./image/cho.png"
+}else if (comp == 3 ){
+  $("#pc_hands").text("パー")
+  $("#judgment").text("カチです")
+  image.src = "./image/pa.png"
+}
+  $("#moji").text("もういっかいやる？？")
+})
+  // パーの時
+  $("#par_btn").on("click",function(){
+  let input_par = 3;
+  var image = document.getElementById('myImage')
+if (comp == 1){
+  $("#pc_hands").text("グー")
+  $("#judgment").text("カチです")
+  image.src = "./image/gu.png"
+}else if (comp == 2 ){
+  $("#pc_hands").text("チョキ")
+  $("#judgment").text("マケです")
+  image.src = "./image/cho.png"
+}else if (comp == 3 ){
+  $("#pc_hands").text("パー")
+  $("#judgment").text("あいこです")
+  image.src = "./image/pa.png"
+}
+  $("#moji").text("もういっかいやる？？")
+})
+// 更新ボタン
+$("#again").on("click",function(){
+  location.reload()
+})
+    
+    
+    
+    
+
+</script>
+</body>
+</html>
